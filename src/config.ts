@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://flouciel.github.io/", // replace this with your deployed domain
+  website: "https://floudeciel.github.io/", // replace this with your deployed domain
   author: "Hazy",
   desc: "A minimal theme.",
   title: "l.u.n.e",
@@ -26,7 +26,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/flouciel/",
+    href: "https://github.com/floudeciel/",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -140,7 +140,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Substack",
-    href: "https://flouciel.substack.com/",
+    href: "https://floudeciel.substack.com/",
     linkTitle: `${SITE.title} on Substack`,
     active: true,
   },

@@ -130,4 +130,4 @@ frida -U -f com.example.dev -l universal-bio-bypass.js
 
 *Use this cheatsheet as a starting point for mobile security testing.*
 
-*https://github.com/flouciel/chezmoi/tree/main/mobsec*
+*https://github.com/floudeciel/chezmoi/tree/main/mobsec*
