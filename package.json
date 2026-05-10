@@ -35,7 +35,7 @@
   "devDependencies": {
     "@astrojs/sitemap": "3.7.2",
     "@astrojs/tailwind": "^6.0.2",
-    "@divriots/jampack": "^0.34.0",
+    "@divriots/jampack": "^0.34.1",
     "@tailwindcss/typography": "^0.5.19",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
