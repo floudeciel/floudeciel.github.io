@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Notes: I’m open to remote opportunities or relocation to a European country. I’m also eligible for a French Job Seeker Visa and the EU Blue Card pathway.
+Notes: I’m open to remote opportunities or relocation to a European country.
 
 It takes curiosity to learn and courage to unlearn. Stay enthusiastic about lifelong learning.
 
@@ -11,14 +11,17 @@ Stay here for some redacted information. For my full resume, please visit [this 
 
 ### Professional Experience
 
-`2024 - present` | `AppSec Engineer`
+`2024 - 2026` | `AppSec Engineer`
 
 __A TechHub - Banking and Fintech Domain__
 
-- Conducted several internal security audits, establishing a strong security baseline for a rapidly growing fintech startup, and reducing critical vulnerabilities by 80% in key systems within 6 months.
-- Collaborated with cross-functional teams (Solution Architects, Developers, and Business Analysts) to identify and address 50+ security gaps through threat modeling and reviews of design documents (FSD, TSD). Revised the data flow to align with security best practices, reducing vulnerabilities in business logic.
-- Drove the adoption of user-centric security practices across multiple engineering teams, enhancing secure development lifecycle and reducing friction during feature delivery.
-- Owned product security for retail digital banking, cutting 80% of major gaps and keeping new feature issues under 10% through secure SDLC practices.
+Product Security ( Team size: 03 )
+
+- Own the AppSec direction for the organization — setting priorities, driving remediation with engineering, and keeping security visible as the product scales.
+- Build security into the delivery pipeline from day one — automating checks across CI/CD, running threat models early in the design phase, and monitoring supply chain risks before they become incidents.
+- Run penetration tests on our products and infrastructure, then stay involved through remediation rather than stopping at the report.
+- Sit on the Security Architecture Review Board and pull in cross-functional teams early — threat modeling against design docs and revising data flows to close vulnerabilities at the business logic layer before they ship.
+- Establish security baselines through internal audits and embed secure development practices into engineering teams in a way that reduces friction rather than slows delivery.
 
 `6 months - 2023` | `R&D Security Internship based in Paris`
 
@@ -33,7 +36,7 @@ __A French Startup Company__
 __An Outsourcing Company.__ 
 
 - Performed security assessments for a global biopharma company, implementing SAST and SCA integrated into SDLC.
-- Performed Dynamic Application Security Testing (DAST) scans for 150+ internal web apps of a US-based client quarterly, identifying an average of 200 vulnerabilities, including on-demand scanning. Created tickets and provided prioritized recommendations to resolve all high and medium severity issues with the developer team.
+- Performed DAST assessments on web applications for a US-based client, identifying and triaging vulnerabilities by severity, and collaborating with development teams on prioritized remediation of high and medium severity findings.
 - Joined as part of an R&D team, conducted PoCs and training for security products including HCL AppSec variants, Rapid7 Appspider, and others. 
 
 `Nearly 3 years` | `Cyber Security Consultant`

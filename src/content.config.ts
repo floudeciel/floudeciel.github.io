@@ -1,8 +1,13 @@
 import { SITE } from "@config";
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/blog",
+    generateId: ({ entry }) => entry.replace(/\.(md|mdx)$/, ""),
+  }),
   schema: ({ image }) =>
     z.object({
       author: z.string().default(SITE.author),
@@ -23,12 +28,15 @@ const blog = defineCollection({
     }),
 });
 
-// Markdown notes for photos, one file per photo
 const photoNotes = defineCollection({
-  type: "content",
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/photoNotes",
+    generateId: ({ entry }) => entry.replace(/\.(md|mdx)$/, ""),
+  }),
   schema: z.object({
-    photoId: z.string(),          // matches photo filename (without extension)
-    title: z.string().optional(), // optional override title
+    photoId: z.string(),
+    title: z.string().optional(),
   }),
 });
 

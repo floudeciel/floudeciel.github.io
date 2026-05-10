@@ -11,9 +11,6 @@ import { SITE } from "./src/config";
 export default defineConfig({
   site: SITE.website,
   output: 'static',
-  legacy: {
-    collections: true,
-  },
   integrations: [
     tailwind({
       applyBaseStyles: false,
@@ -162,12 +159,10 @@ export default defineConfig({
     service: {
       entrypoint: 'astro/assets/services/sharp',
       config: {
-        // Sharp options for image optimization
-        jpeg: { quality: 98, compressionLevel: 8 },
-        jpg: { quality: 98, compressionLevel: 8 },
-        png: { quality: 100, compressionLevel: 8 },
-        webp: { quality: 98, compressionLevel: 8 },
-        avif: { quality: 98, compressionLevel: 8 },
+        jpeg: { quality: 98, mozjpeg: true },
+        png: { quality: 100, compressionLevel: 9 },
+        webp: { quality: 98, effort: 6 },
+        avif: { quality: 98, effort: 9 },
       },
     },
   },
@@ -185,6 +180,9 @@ export default defineConfig({
     shikiConfig: {
       theme: "one-dark-pro",
       wrap: true,
+    },
+    smartypants: {
+      dashes: "oldschool",
     },
   },
   vite: {
