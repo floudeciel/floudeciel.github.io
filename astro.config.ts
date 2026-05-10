@@ -11,6 +11,9 @@ import { SITE } from "./src/config";
 export default defineConfig({
   site: SITE.website,
   output: 'static',
+  legacy: {
+    collections: true,
+  },
   integrations: [
     tailwind({
       applyBaseStyles: false,
