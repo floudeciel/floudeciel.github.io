@@ -7,7 +7,7 @@ Notes: I’m open to remote opportunities or relocation to a European country.
 
 It takes curiosity to learn and courage to unlearn. Stay enthusiastic about lifelong learning.
 
-Stay here for some redacted information. For my full resume, please visit [this link](/tristan_resume.pdf) and my [cover letter](/tristan_cover_letter.pdf); if you're interested and would like to chat, shoot me a DM or reach out via the links in the footer.
+Stay here for some redacted information. For my full resume, please visit [this link](/tristanbui_resume.pdf) and my [cover letter](/tristan_cover_letter.pdf); if you're interested and would like to chat, shoot me a DM or reach out via the links in the footer.
 
 ### Professional Experience
 
