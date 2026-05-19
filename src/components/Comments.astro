@@ -7,77 +7,40 @@ export interface Props {
 const { title, slug } = Astro.props;
 ---
 
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="1c980a84-bfaf-4414-8810-4c7fa568e1d4"
-  data-page-id={slug}
-  data-page-url={slug}
-  data-page-title={title}
-  data-theme="auto">
+<div class="giscus-wrapper">
+  <script
+    is:inline
+    src="https://giscus.app/client.js"
+    data-repo="floudeciel/floudeciel.github.io"
+    data-repo-id="R_kgDOLoWB9g"
+    data-category="Blog Post Comments"
+    data-category-id="DIC_kwDOLoWB9s4CkSw9"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+  ></script>
 </div>
 
 <script is:inline>
-  // Dynamically load the Cusdis script to prevent local caching issues
-  (function() {
-    const d = document,
-      s = d.createElement('script');
-    s.src = 'https://cusdis.com/js/cusdis.es.js';
-    s.async = true;
-    s.defer = true;
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-
-<style>
-  #cusdis_thread iframe {
-    width: 100%;
-    min-height: 200px; /* Initial height */
-    border: none !important;
-  }
-</style>
-
-<script is:inline>
-  function getTheme() {
-    return document.documentElement.getAttribute("data-theme") || "light";
-  }
-
-  function handleCusdisMessage(event) {
-    if (event.origin !== "https://cusdis.com") return;
-
-    const { type, payload } = event.data;
-    const cusdisFrame = document.querySelector("#cusdis_thread iframe");
-
-    if (!cusdisFrame) {
-      return;
-    }
-
-    if (type === "cusdis:ready") {
-      const theme = getTheme();
-      cusdisFrame.contentWindow.postMessage(
-        { type: "cusdis:set-theme", payload: theme },
-        "https://cusdis.com"
+  function setGiscusTheme() {
+    const theme = document.documentElement.getAttribute("data-theme") === "dark"
+      ? "dark"
+      : "light";
+    const iframe = document.querySelector("iframe.giscus-frame");
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme } } },
+        "https://giscus.app"
       );
-    } else if (type === "cusdis:resize-height") {
-      cusdisFrame.style.height = payload + "px";
     }
   }
 
-  window.addEventListener("message", handleCusdisMessage);
-
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.attributeName === "data-theme") {
-        const theme = getTheme();
-        const cusdisFrame = document.querySelector("#cusdis_thread iframe");
-        if (cusdisFrame) {
-          cusdisFrame.contentWindow.postMessage(
-            { type: "cusdis:set-theme", payload: theme },
-            "https://cusdis.com"
-          );
-        }
-      }
-    });
-  });
-
-  observer.observe(document.documentElement, { attributes: true });
+  const observer = new MutationObserver(() => setGiscusTheme());
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 </script>
