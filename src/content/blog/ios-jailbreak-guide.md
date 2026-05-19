@@ -40,12 +40,17 @@ Step 2: Install palera1n tool
 sudo /bin/sh -c "$(curl -fsSL https://static.palera.in/scripts/install.sh)"
 ```
 Step 3: Run palera1n on command line
-update: palera1n -l
+update: 
+
+```bash
+palera1n -l
+```
+
 ![palera1n-cli-1](@assets/images/palera1n-l.png)
 
 Step 4: Enter and follow the instruction
-- Hold volumn down + side button for 4 seconds 
-- Release the side button, keep hold volumn down for 10 seconds
+- Hold volume down + side button for 4 seconds 
+- Release the side button, keep hold volume down for 10 seconds
 ![palera1n-cli-2](@assets/images/2024-10-15-15-08-18.png)
 
 Once complete, this will install <span class="accent">palera1n</span> and <span class="accent">sileo</span> app on the device.

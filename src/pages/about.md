@@ -7,7 +7,7 @@ Notes: I’m open to remote opportunities or relocation to a European country.
 
 It takes curiosity to learn and courage to unlearn. Stay enthusiastic about lifelong learning.
 
-Stay here for some redacted information. For my full resume, please visit [this link](/tristan_Resume.pdf) and my [cover letter](/tristan_cover_letter.pdf); if you're interested and would like to chat, shoot me a DM or reach out via the links in the footer.
+Stay here for some redacted information. For my full resume, please visit [this link](/tristan_resume.pdf) and my [cover letter](/tristan_cover_letter.pdf); if you're interested and would like to chat, shoot me a DM or reach out via the links in the footer.
 
 ### Professional Experience
 
@@ -17,8 +17,8 @@ __A TechHub - Banking and Fintech Domain__
 
 Product Security ( Team size: 03 )
 
-- Own the AppSec direction for the organization — setting priorities, driving remediation with engineering, and keeping security visible as the product scales.
-- Build security into the delivery pipeline from day one — automating checks across CI/CD, running threat models early in the design phase, and monitoring supply chain risks before they become incidents.
+- Own the AppSec direction for the organization, setting priorities, driving remediation with engineering, and keeping security visible as the product scales.
+- Build security into the delivery pipeline from day one automating checks across CI/CD, running threat models early in the design phase, and monitoring supply chain risks before they become incidents.
 - Run penetration tests on our products and infrastructure, then stay involved through remediation rather than stopping at the report.
 - Sit on the Security Architecture Review Board and pull in cross-functional teams early — threat modeling against design docs and revising data flows to close vulnerabilities at the business logic layer before they ship.
 - Establish security baselines through internal audits and embed secure development practices into engineering teams in a way that reduces friction rather than slows delivery.
