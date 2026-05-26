@@ -33,7 +33,7 @@
     "workbox-window": "^7.4.1"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "3.7.2",
+    "@astrojs/sitemap": "3.7.3",
     "@astrojs/tailwind": "^6.0.2",
     "@divriots/jampack": "^0.34.1",
     "@tailwindcss/typography": "^0.5.19",
