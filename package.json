@@ -36,7 +36,7 @@
     "@astrojs/sitemap": "3.7.3",
     "@astrojs/tailwind": "^6.0.2",
     "@divriots/jampack": "^0.34.1",
-    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/typography": "^0.5.20",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@vite-pwa/astro": "^1.2.0",
