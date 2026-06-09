@@ -31,7 +31,7 @@ importers:
     dependencies:
       '@astrojs/react':
         specifier: ^5.0.7
-        version: 5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.15))(@types/react@19.2.15)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(terser@5.47.1)(yaml@2.8.4)
+        version: 5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(terser@5.47.1)(yaml@2.8.4)
       '@astrojs/rss':
         specifier: 4.0.18
         version: 4.0.18
@@ -48,11 +48,11 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       react:
-        specifier: ^19.2.6
-        version: 19.2.6
+        specifier: ^19.2.7
+        version: 19.2.7
       react-dom:
         specifier: ^19.2.6
-        version: 19.2.6(react@19.2.6)
+        version: 19.2.6(react@19.2.7)
       remark-collapse:
         specifier: ^0.1.2
         version: 0.1.2
@@ -83,16 +83,16 @@ importers:
         version: 6.0.2(astro@6.3.8(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.3)(terser@5.47.1)(yaml@2.8.4))(tailwindcss@3.4.19)
       '@divriots/jampack':
         specifier: ^0.34.1
-        version: 0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        version: 0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
       '@tailwindcss/typography':
         specifier: ^0.5.20
         version: 0.5.20(tailwindcss@3.4.19)
       '@types/react':
-        specifier: ^19.2.15
-        version: 19.2.15
+        specifier: ^19.2.17
+        version: 19.2.17
       '@types/react-dom':
         specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.15)
+        version: 19.2.3(@types/react@19.2.17)
       '@vite-pwa/astro':
         specifier: ^1.2.0
         version: 1.2.0(astro@6.3.8(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.3)(terser@5.47.1)(yaml@2.8.4))(vite-plugin-pwa@1.3.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.8.4))(workbox-build@7.4.1(@types/babel__core@7.20.5))(workbox-window@7.4.1))
@@ -1790,8 +1790,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.15':
-    resolution: {integrity: sha512-eRwcGNHve+E8qtEQSSRl6urh+rFop4v8gm6O8rGv25CodbvFdLjA1vVQ1KkiFE0w0UPOnb8tDiFKL5lp0rtY5Q==}
+  '@types/react@19.2.17':
+    resolution: {integrity: sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -3873,8 +3873,8 @@ packages:
     resolution: {integrity: sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==}
     engines: {node: '>=0.10.0'}
 
-  react@19.2.6:
-    resolution: {integrity: sha512-sfWGGfavi0xr8Pg0sVsyHMAOziVYKgPLNrS7ig+ivMNb3wbCBw3KxtflsGBAwD3gYQlE/AEZsTLgToRrSCjb0Q==}
+  react@19.2.7:
+    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -4873,15 +4873,15 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.15))(@types/react@19.2.15)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(terser@5.47.1)(yaml@2.8.4)':
+  '@astrojs/react@5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(terser@5.47.1)(yaml@2.8.4)':
     dependencies:
       '@astrojs/internal-helpers': 0.10.0
-      '@types/react': 19.2.15
-      '@types/react-dom': 19.2.3(@types/react@19.2.15)
+      '@types/react': 19.2.17
+      '@types/react-dom': 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react': 5.2.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.8.4))
       devalue: 5.8.1
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
+      react: 19.2.7
+      react-dom: 19.2.6(react@19.2.7)
       ultrahtml: 1.6.0
       vite: 7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.8.4)
     transitivePeerDependencies:
@@ -5779,7 +5779,7 @@ snapshots:
       undici: 6.25.0
       whatwg-mimetype: 3.0.0
 
-  '@divriots/jampack@0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
+  '@divriots/jampack@0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@divriots/cheerio': 1.0.0-rc.12
@@ -5800,7 +5800,7 @@ snapshots:
       lozad: 1.16.0
       mini-svg-data-uri: 1.4.4
       ora: 8.2.0
-      quicklink: 2.3.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      quicklink: 2.3.0(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
       sharp: 0.33.5
       svgo: 3.3.3
       table: 6.9.0
@@ -6564,11 +6564,11 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react-dom@19.2.3(@types/react@19.2.15)':
+  '@types/react-dom@19.2.3(@types/react@19.2.17)':
     dependencies:
-      '@types/react': 19.2.15
+      '@types/react': 19.2.17
 
-  '@types/react@19.2.15':
+  '@types/react@19.2.17':
     dependencies:
       csstype: 3.2.3
 
@@ -9016,23 +9016,23 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  quicklink@2.3.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
+  quicklink@2.3.0(react-dom@19.2.6(react@19.2.7))(react@19.2.7):
     dependencies:
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
+      react: 19.2.7
+      react-dom: 19.2.6(react@19.2.7)
       route-manifest: 1.0.0
       throttles: 1.0.1
 
   radix3@1.1.2: {}
 
-  react-dom@19.2.6(react@19.2.6):
+  react-dom@19.2.6(react@19.2.7):
     dependencies:
-      react: 19.2.6
+      react: 19.2.7
       scheduler: 0.27.0
 
   react-refresh@0.18.0: {}
 
-  react@19.2.6: {}
+  react@19.2.7: {}
 
   read-cache@1.0.0:
     dependencies:
