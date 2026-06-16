@@ -31,7 +31,7 @@ importers:
     dependencies:
       '@astrojs/react':
         specifier: ^5.0.7
-        version: 5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(terser@5.47.1)(yaml@2.8.4)
+        version: 5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.47.1)(yaml@2.8.4)
       '@astrojs/rss':
         specifier: 4.0.18
         version: 4.0.18
@@ -51,8 +51,8 @@ importers:
         specifier: ^19.2.7
         version: 19.2.7
       react-dom:
-        specifier: ^19.2.6
-        version: 19.2.6(react@19.2.7)
+        specifier: ^19.2.7
+        version: 19.2.7(react@19.2.7)
       remark-collapse:
         specifier: ^0.1.2
         version: 0.1.2
@@ -83,7 +83,7 @@ importers:
         version: 6.0.2(astro@6.4.7(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.3)(terser@5.47.1)(yaml@2.8.4))(tailwindcss@3.4.19)
       '@divriots/jampack':
         specifier: ^0.34.1
-        version: 0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+        version: 0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@tailwindcss/typography':
         specifier: ^0.5.20
         version: 0.5.20(tailwindcss@3.4.19)
@@ -3835,10 +3835,10 @@ packages:
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
-  react-dom@19.2.6:
-    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
+  react-dom@19.2.7:
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^19.2.6
+      react: ^19.2.7
 
   react-refresh@0.18.0:
     resolution: {integrity: sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==}
@@ -4832,7 +4832,7 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)(terser@5.47.1)(yaml@2.8.4)':
+  '@astrojs/react@5.0.7(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(terser@5.47.1)(yaml@2.8.4)':
     dependencies:
       '@astrojs/internal-helpers': 0.10.0
       '@types/react': 19.2.17
@@ -4840,7 +4840,7 @@ snapshots:
       '@vitejs/plugin-react': 5.2.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.8.4))
       devalue: 5.8.1
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
       ultrahtml: 1.6.0
       vite: 7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.8.4)
     transitivePeerDependencies:
@@ -5738,7 +5738,7 @@ snapshots:
       undici: 6.25.0
       whatwg-mimetype: 3.0.0
 
-  '@divriots/jampack@0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.6(react@19.2.7))(react@19.2.7)':
+  '@divriots/jampack@0.34.1(@swc/helpers@0.5.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@divriots/cheerio': 1.0.0-rc.12
@@ -5759,7 +5759,7 @@ snapshots:
       lozad: 1.16.0
       mini-svg-data-uri: 1.4.4
       ora: 8.2.0
-      quicklink: 2.3.0(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+      quicklink: 2.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       sharp: 0.33.5
       svgo: 3.3.3
       table: 6.9.0
@@ -8936,16 +8936,16 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  quicklink@2.3.0(react-dom@19.2.6(react@19.2.7))(react@19.2.7):
+  quicklink@2.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
       route-manifest: 1.0.0
       throttles: 1.0.1
 
   radix3@1.1.2: {}
 
-  react-dom@19.2.6(react@19.2.7):
+  react-dom@19.2.7(react@19.2.7):
     dependencies:
       react: 19.2.7
       scheduler: 0.27.0
