@@ -94,8 +94,8 @@ importers:
         specifier: ^19.3.0
         version: 19.3.0(@types/react@19.3.0)
       '@vite-pwa/astro':
-        specifier: ^1.2.0
-        version: 1.2.0(astro@6.4.7(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(rollup@4.60.3)(terser@5.51.2)(yaml@2.8.4))(vite-plugin-pwa@1.3.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))(workbox-build@7.4.1(@types/babel__core@7.20.5))(workbox-window@7.4.1))
+        specifier: ^2.0.0
+        version: 2.0.0(astro@6.4.7(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(rollup@4.60.3)(terser@5.51.2)(yaml@2.8.4))(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))
       autoprefixer:
         specifier: ^10.6.1
         version: 10.6.1(postcss@8.5.32)
@@ -1487,6 +1487,9 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
+  '@jridgewell/sourcemap-codec@1.6.0':
+    resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
+
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
@@ -1590,6 +1593,9 @@ packages:
 
   '@rolldown/pluginutils@1.0.0-rc.3':
     resolution: {integrity: sha512-eybk3TjzzzV97Dlj5c+XrBFW57eTNhzod66y9HrBlzJ6NsCrWCp/2kaPS3K9wJmurBC0Tdw4yPjXKZqlznim3Q==}
+
+  '@rolldown/pluginutils@1.0.1':
+    resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
 
   '@rollup/plugin-babel@6.1.0':
     resolution: {integrity: sha512-dFZNuFD2YRcoomP4oYf+DvQNSUA9ih+A3vUqopQx5EdtPGo3WBnQcI/S8pwpz91UsGfL0HsMSOlaMld8HrbubA==}
@@ -2001,15 +2007,85 @@ packages:
   '@ungap/structured-clone@1.3.1':
     resolution: {integrity: sha512-mUFwbeTqrVgDQxFveS+df2yfap6iuP20NAKAsBt5jDEoOTDew+zwLAOilHCeQJOVSvmgCX4ogqIrA0mnyr08yQ==}
 
-  '@vite-pwa/astro@1.2.0':
-    resolution: {integrity: sha512-ZJYkc87j/nuuBJjZEYe0C4MeXH3UHcYPWuSH0qq3dRIhlm8ej4ygPZm9YyB6rWNuPZ7ixRX+hVWHU3NaXfkzyA==}
+  '@unplugin-pwa/core@0.0.3':
+    resolution: {integrity: sha512-udhrh9bpBay2SA2c571TVw7OwqHM4UA64brl6tH7YFHvIahNpjghyXDeK6vYjxO1tpNhOmPH+3xWC9+gqccxCw==}
+    engines: {node: '>=22.14.0'}
     peerDependencies:
-      '@vite-pwa/assets-generator': ^1.0.0
-      astro: ^1.6.0 || ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
-      vite-plugin-pwa: ^1.2.0
+      '@vite-pwa/assets-generator': ^1.0.0 || ^2.0.0
+      rolldown: ^1.0.0-0
+      vite: ^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@vite-pwa/assets-generator':
         optional: true
+      rolldown:
+        optional: true
+      vite:
+        optional: true
+
+  '@unplugin-pwa/inspector@0.0.3':
+    resolution: {integrity: sha512-aVqaXe9corAONKbNxMuQqzIA0ReL9veNU9vGagowRM0XZ4ktiTFpU8Qmb4F2XYWVLykcYM5pxoWvNDcq8rna1A==}
+    engines: {node: '>=22.14.0'}
+
+  '@unplugin-pwa/vite@0.0.3':
+    resolution: {integrity: sha512-ncD2sx2EbRw13QjvVfxPsPDPffaBCpm8Rn8ZHlLtwPh0Yn67hqYaQ3P8ilnHq0gJKW48BH+sE1RAT03+LCqg3g==}
+    engines: {node: '>=22.14.0'}
+    peerDependencies:
+      '@vite-pwa/assets-generator': ^1.0.0 || ^2.0.0
+      magicast: ^0.5.0
+      rolldown: ^1.0.0-0
+      vite: ^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+    peerDependenciesMeta:
+      '@vite-pwa/assets-generator':
+        optional: true
+      magicast:
+        optional: true
+      rolldown:
+        optional: true
+      vite:
+        optional: true
+
+  '@vite-pwa/astro@2.0.0':
+    resolution: {integrity: sha512-ONWbSUJ+L9iAQy0opk/a+7lBjXqOcH2k286+tmMbdLL6xr0ArsnAO00tnfiAOPsjLRULa0k97JQ3cbR8eOryAw==}
+    engines: {node: '>=22.14.0'}
+    peerDependencies:
+      '@vite-pwa/assets-generator': ^1.0.0 || ^2.0.0
+      astro: ^5.0.0 || ^6.0.0 || ^7.0.0
+      magicast: ^0.5.0
+      rolldown: ^1.0.0-0
+    peerDependenciesMeta:
+      '@vite-pwa/assets-generator':
+        optional: true
+      magicast:
+        optional: true
+      rolldown:
+        optional: true
+
+  '@vite-pwa/workbox-build@8.0.14':
+    resolution: {integrity: sha512-qU/ln/pyC6+EOZHJ9b4jgiC52Bb2BU9E7xcU9visYBelhAcnYvIAHrHP0mQ65PTd4Wk4HdWw9pMSrZZB9kpBaQ==}
+    engines: {node: '>=22.14.0'}
+    peerDependencies:
+      '@rspack/core': ^1.0.0 || ^2.0.0
+      magicast: ^0.5.0
+      rolldown: ^1.0.0-0
+      vite: ^3.1.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+      webpack: ^5.91.0
+    peerDependenciesMeta:
+      '@rspack/core':
+        optional: true
+      magicast:
+        optional: true
+      rolldown:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+
+  '@vite-pwa/workbox-swkit@8.0.14':
+    resolution: {integrity: sha512-6o2S7GXS0NEfbty47JJdSl+OoTnb5xbCmCqSf+gGv+kJzL0TaGzrEN2x2gJBiXpQQs7vmC4tV1W1LFf4GmFcog==}
+
+  '@vite-pwa/workbox-window@8.0.14':
+    resolution: {integrity: sha512-KhQ/+B70udMwluP8AhZDyWb59TfJmYIqoDVeCBeTuU496yYK4nfIvysxIp7BlDkZf8VUO7SWqYlYptlrWmPU4Q==}
 
   '@vitejs/plugin-react@5.2.0':
     resolution: {integrity: sha512-YmKkfhOAi3wsB1PhJq5Scj3GXMn3WvtQ/JC0xoopuHoXSdmtdStOpFrYaT1kie2YgFBcIe64ROzMYRjCrYOdYw==}
@@ -3065,6 +3141,9 @@ packages:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
     engines: {node: '>=0.10.0'}
 
+  hookable@6.1.2:
+    resolution: {integrity: sha512-+abwxtiEA52GCVIsQqut3S/uKTbUwYIp4Pe/vv+6py5XiXBCqMZHg6pA6Y5qhgLSEys0/cYuPbO0z1QFj5ZCmg==}
+
   html-escaper@3.0.3:
     resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
 
@@ -3100,6 +3179,9 @@ packages:
 
   idb@7.1.1:
     resolution: {integrity: sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==}
+
+  idb@8.0.4:
+    resolution: {integrity: sha512-jd0ITCrN+Zah4J7R/Z2jnR3W7A4BXDAjmo62MwWuSjxCiueUAf7X5rbodEdidWzeknwXHmLpdZkoiiCppNi30Q==}
 
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
@@ -3568,6 +3650,9 @@ packages:
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
+
+  magic-string@1.4.5:
+    resolution: {integrity: sha512-oLLC2+YvQUfAa+vxoufE/yc1icb87M9iXIRqAoR/2EhE/8cb3SF/+Gi0c2By1B+5Vz2e2vQtUvHiu1+63Znh+w==}
 
   magicast@0.5.3:
     resolution: {integrity: sha512-pVKE4UdSQ7DvHzivsCIFx2BJn1mHG6KsyrFcaxFx6tONdneEuThrDx0Cj3AMg58KyN4pzYT+LHOotxDQDjNvkw==}
@@ -4068,6 +4153,10 @@ packages:
     resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
     engines: {node: '>=6'}
 
+  proper-tags@2.0.2:
+    resolution: {integrity: sha512-rpgQb3JC9uWAogm9J3G6heeg7n/Gq82GZKaFt080JPVbydKvGW6ECj9Ui1a6taTFv9Oa+dq9GMhHeOJyxxaURA==}
+    engines: {node: '>=12.0.0'}
+
   property-information@7.2.0:
     resolution: {integrity: sha512-IAtzIB6sUiWaJYrX9smp3V46pBGbBeLFRGdh25kg1334VcBlD8HzhPeNIWQH9zhGmo2itIe25EHt9dQP7G5hmg==}
 
@@ -4311,6 +4400,10 @@ packages:
 
   serialize-javascript@7.0.5:
     resolution: {integrity: sha512-F4LcB0UqUl1zErq+1nYEEzSHJnIwb3AF2XWB94b+afhrekOUijwooAYqFyRbjYkm2PAKBabx6oYv/xDxNi8IBw==}
+    engines: {node: '>=20.0.0'}
+
+  serialize-javascript@7.1.4:
+    resolution: {integrity: sha512-FqlEuoTq/zRmA4Lg6aOqyH3lCHbUtCB0bmHCeFniX2GBdDqMJM3FwdvEhlE5Pim1dlt2FfBdVPmUNNiGhhKqpw==}
     engines: {node: '>=20.0.0'}
 
   set-function-length@1.2.2:
@@ -4842,6 +4935,18 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  valibot@1.5.0:
+    resolution: {integrity: sha512-nil6AkP2TChWL43Z5uJ6GTxX01CUA+g8LWUM+N/rB9NBbkUMaUsi9PUNzlUPgoKASgmx9f7eGOYpJ04/fSa6FQ==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  verkit@0.5.0:
+    resolution: {integrity: sha512-u4J1hr6Y+C/hit34GwL3eIcUf3wngT8TlYUjK7tk0jxydKLAq3sYvifjdTDA6U3KCKRcQCQDGf/srjxfZF3l7g==}
+    engines: {node: '>=18.12.0'}
 
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
@@ -6501,10 +6606,12 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
+  '@jridgewell/sourcemap-codec@1.6.0': {}
+
   '@jridgewell/trace-mapping@0.3.31':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   '@nodable/entities@2.2.0': {}
 
@@ -6574,6 +6681,8 @@ snapshots:
       '@resvg/resvg-js-win32-x64-msvc': 2.6.2
 
   '@rolldown/pluginutils@1.0.0-rc.3': {}
+
+  '@rolldown/pluginutils@1.0.1': {}
 
   '@rollup/plugin-babel@6.1.0(@babel/core@7.29.0)(@types/babel__core@7.20.5)(rollup@4.60.3)':
     dependencies:
@@ -6901,10 +7010,77 @@ snapshots:
 
   '@ungap/structured-clone@1.3.1': {}
 
-  '@vite-pwa/astro@1.2.0(astro@6.4.7(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(rollup@4.60.3)(terser@5.51.2)(yaml@2.8.4))(vite-plugin-pwa@1.3.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))(workbox-build@7.4.1(@types/babel__core@7.20.5))(workbox-window@7.4.1))':
+  '@unplugin-pwa/core@0.0.3(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))':
     dependencies:
+      '@vite-pwa/workbox-build': 8.0.14(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))
+      hookable: 6.1.2
+    optionalDependencies:
+      vite: 7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4)
+    transitivePeerDependencies:
+      - '@rspack/core'
+      - magicast
+      - typescript
+      - webpack
+
+  '@unplugin-pwa/inspector@0.0.3': {}
+
+  '@unplugin-pwa/vite@0.0.3(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))':
+    dependencies:
+      '@rolldown/pluginutils': 1.0.1
+      '@unplugin-pwa/core': 0.0.3(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))
+      '@unplugin-pwa/inspector': 0.0.3
+      '@vite-pwa/workbox-build': 8.0.14(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))
+      '@vite-pwa/workbox-swkit': 8.0.14
+      '@vite-pwa/workbox-window': 8.0.14
+    optionalDependencies:
+      magicast: 0.5.3
+      vite: 7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4)
+    transitivePeerDependencies:
+      - '@rspack/core'
+      - typescript
+      - webpack
+
+  '@vite-pwa/astro@2.0.0(astro@6.4.7(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(rollup@4.60.3)(terser@5.51.2)(yaml@2.8.4))(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))':
+    dependencies:
+      '@unplugin-pwa/core': 0.0.3(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))
+      '@unplugin-pwa/inspector': 0.0.3
+      '@unplugin-pwa/vite': 0.0.3(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))
+      '@vite-pwa/workbox-build': 8.0.14(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))
+      '@vite-pwa/workbox-swkit': 8.0.14
+      '@vite-pwa/workbox-window': 8.0.14
       astro: 6.4.7(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(rollup@4.60.3)(terser@5.51.2)(yaml@2.8.4)
-      vite-plugin-pwa: 1.3.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))(workbox-build@7.4.1(@types/babel__core@7.20.5))(workbox-window@7.4.1)
+    optionalDependencies:
+      magicast: 0.5.3
+    transitivePeerDependencies:
+      - '@rspack/core'
+      - typescript
+      - vite
+      - webpack
+
+  '@vite-pwa/workbox-build@8.0.14(magicast@0.5.3)(typescript@5.8.3)(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))':
+    dependencies:
+      '@jridgewell/remapping': 2.3.5
+      '@vite-pwa/workbox-swkit': 8.0.14
+      '@vite-pwa/workbox-window': 8.0.14
+      magic-string: 1.4.5
+      proper-tags: 2.0.2
+      serialize-javascript: 7.1.4
+      tinyglobby: 0.2.17
+      valibot: 1.5.0(typescript@5.8.3)
+      verkit: 0.5.0
+    optionalDependencies:
+      magicast: 0.5.3
+      vite: 7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4)
+    transitivePeerDependencies:
+      - typescript
+
+  '@vite-pwa/workbox-swkit@8.0.14':
+    dependencies:
+      idb: 8.0.4
+
+  '@vite-pwa/workbox-window@8.0.14':
+    dependencies:
+      '@types/trusted-types': 2.0.7
 
   '@vitejs/plugin-react@5.2.0(vite@7.3.3(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.33.0)(terser@5.51.2)(yaml@2.8.4))':
     dependencies:
@@ -8223,6 +8399,8 @@ snapshots:
     dependencies:
       parse-passwd: 1.0.0
 
+  hookable@6.1.2: {}
+
   html-escaper@3.0.3: {}
 
   html-minifier-terser@7.2.0:
@@ -8264,6 +8442,8 @@ snapshots:
       safer-buffer: 2.1.2
 
   idb@7.1.1: {}
+
+  idb@8.0.4: {}
 
   ieee754@1.2.1: {}
 
@@ -8675,6 +8855,10 @@ snapshots:
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  magic-string@1.4.5:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   magicast@0.5.3:
     dependencies:
@@ -9343,6 +9527,8 @@ snapshots:
 
   prismjs@1.30.0: {}
 
+  proper-tags@2.0.2: {}
+
   property-information@7.2.0: {}
 
   punycode@2.3.1: {}
@@ -9670,6 +9856,8 @@ snapshots:
   semver@7.8.5: {}
 
   serialize-javascript@7.0.5: {}
+
+  serialize-javascript@7.1.4: {}
 
   set-function-length@1.2.2:
     dependencies:
@@ -10322,6 +10510,12 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
+
+  valibot@1.5.0(typescript@5.8.3):
+    optionalDependencies:
+      typescript: 5.8.3
+
+  verkit@0.5.0: {}
 
   vfile-location@5.0.3:
     dependencies:
